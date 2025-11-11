@@ -1,100 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indigenous Populations in Canada - Data Analysis</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 30px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        h1 {
-            text-align: center;
-            color: #333;
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        
-        .subtitle {
-            text-align: center;
-            color: #666;
-            font-size: 1.1em;
-            margin-bottom: 40px;
-        }
-        
-        h2 {
-            color: #2c5aa0;
-            font-size: 1.8em;
-            margin-top: 50px;
-            margin-bottom: 20px;
-            border-bottom: 3px solid #2c5aa0;
-            padding-bottom: 10px;
-        }
-        
-        .viz-container {
-            margin-bottom: 60px;
-        }
-        
-        iframe {
-            width: 100%;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            display: block;
-            margin: 20px 0;
-        }
-        
-        .description {
-            color: #555;
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indigenous Populations in Canada - Data Analysis</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+}
+h2 {
+    color: #2c5aa0;
+    font-size: 1.8em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #2c5aa0;
+    padding-bottom: 10px;
+}
+.viz-container {
+    margin-bottom: 60px;
+}
+iframe {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+}
+.viz-container {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.description {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>Indigenous Populations in Canada</h1>
-        <p class="subtitle">An Analysis of Population Distribution and Health Outcomes (2021 Census Data)</p>
-        
-        <!-- Visualization 1: Donut Chart (if you created one) -->
-        <div class="viz-container">
-            <h2>1. Population Distribution by Indigenous Group</h2>
-            <p class="description">
-                This visualization shows the distribution of Indigenous populations across First Nations, Inuit, and Métis groups in Canada.
-            </p>
-            <iframe src="donut.html" height="725" frameborder="0"></iframe>
-        </div>
-        
-        <!-- Visualization 2: Choropleth Map -->
-        <div class="viz-container">
-            <h2>2. Geographic Distribution of Indigenous Populations</h2>
-            <p class="description">
-                This interactive map displays the percentage of Indigenous populations and counts for First Nations, Inuit, 
-                and Métis groups across Canadian provinces and territories. Use the layer control to switch between different views.
-            </p>
-            <iframe src="map.html" height="600" frameborder="0"></iframe>
-        </div>
-        
-        <!-- Visualization 3: Scatter Plot -->
-        <div class="viz-container">
-            <h2>3. Mental Health and Food Insecurity Analysis</h2>
-            <p class="description">
-                This scatter plot explores the relationship between self-reported poor to fair mental health and food insecurity 
-                among Indigenous and non-Indigenous populations. Use the animation controls to view data by sex.
-            </p>
-            <iframe src="scatter.html" height="650" frameborder="0"></iframe>
-        </div>
+<div class="container">
+    <h1>Indigenous Populations in Canada</h1>
+    <p class="subtitle">An Analysis of Population Distribution and Health Outcomes (2021 Census Data)</p>
+    
+    <!-- Visualization 1: Donut Chart -->
+    <div class="viz-container">
+        <h2>1. Population Distribution by Indigenous Group</h2>
+        <p class="description">
+            This visualization shows the distribution of Indigenous populations across First Nations, Inuit, and Métis groups in Canada.
+        </p>
+        <iframe src="donut.html" height="725" frameborder="0"></iframe>
     </div>
+    
+    <!-- Visualization 2: Choropleth Map -->
+    <div class="viz-container">
+        <h2>2. Geographic Distribution of Indigenous Populations</h2>
+        <p class="description">
+            This interactive map displays the percentage of Indigenous populations and counts for First Nations, Inuit, 
+            and Métis groups across Canadian provinces and territories. Use the layer control to switch between different views.
+        </p>
+        <iframe src="map.html" height="725" frameborder="0"></iframe>
+    </div>
+    
+    <!-- Visualization 3: Subplot Donuts -->
+    <div class="viz-container">
+        <h2>3. Top Provinces by Indigenous Proportion</h2>
+        <p class="description">
+            This visualization shows the three Canadian provinces with the highest proportion of Indigenous individuals,
+            displaying the breakdown of First Nations, Inuit, Métis, and Non-Indigenous populations.
+        </p>
+        <iframe src="subplots.html" height="650" frameborder="0"></iframe>
+    </div>
+    
+    <!-- Visualization 4: Scatter Plot -->
+    <div class="viz-container">
+        <h2>4. Mental Health and Food Insecurity Analysis</h2>
+        <p class="description">
+            This scatter plot explores the relationship between self-reported poor to fair mental health and food insecurity 
+            among Indigenous and non-Indigenous populations. Use the animation controls to view data by sex.
+        </p>
+        <iframe src="scatter.html" height="650" frameborder="0"></iframe>
+    </div>
+</div>
 </body>
 </html>

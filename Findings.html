@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DATA303 Final</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Website.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gelasio">
+
+<style>
+.bar,body,h1,h2,h3,h4,h5,h6, button{font-family: "Gelasio", serif}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="top">
+  <div class="bar blue card left-align large">
+    <a class="bar-item button hide-medium hide-large right padding-large hover-white large blue a-1" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="Website.html" class="bar-item button hide-small padding-large hover-white a-1">About</a>
+    <a href="Findings.html" class="bar-item button padding-large white a-1">Findings</a>
+    <a href="Data.html" class="bar-item button hide-small padding-large hover-white a-1">Data</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="container blue center" style="padding:128px 16px">
+  <h1 class="margin">Findings</h1>
+</header>
+
+<!-- First Grid -->
+<div class="row-padding padding-64 container">
+  <div class="content">
+    <div class="graph">
+      <h3>A Broad Overview of Trump's Appointees</h3>
+      <h5 class="padding-16">During his first 300 days in office, Donald Trump appointed x nominees</h5>
+      <p class="text-grey">[Waffle Chart]</p>
+    </div>
+
+  </div>
+  <div class="content">
+    <div class="graph">
+      <h3>Demographic Trends</h3>
+      <h5 class="padding-16">Trump has nominated fewer women than his predecessors</h5>
+      <p class="text-grey">Among all presidents elected after 2000, Trump has nominated the fewest number of women. This pattern is particularly prominent during his second term, where he nominated 7% fewer women compared to his first term. His actions are contrasted with those of the Biden administration, which nominated record-breaking numbers of women to key positions in the executive branch. </p>
+      <img src="gender.png" alt="Bar chart of gender distribution during Bush, Obama, Trump, and Biden administrations">
+      <h5 class="padding-16">Trump has nominated fewer people of color than his predecessors</h5>
+      <p class="text-grey">Over 90% of Trump's nominees identify as white, a marked shift from his predecessor who appointed a more diverse group. The impacts of are even more alient because of the quantity. Not only is the percentage of white nominees higher under Trump, but the number of white people appointed during his first 300 days outnumber the total nominations made by Biden during his first 300 days. </p>
+      <iframe src="donut.html"  width="100%" height="550" frameborder="0" style="border:0"></iframe>
+    </div>
+  </div>
+  <div class="content">
+    <div class="graph">
+        <h3>Confirmation Trends</h3>
+        <h5 class="padding-16">Trump's appointees face significant challenges before and after appointment</h5>
+        <p class="text-grey">
+        The diagram below illustrates the outcome of each of Trump's political nominations during his second term. Unlike other visualizations on this page, this diagram draws from a larger sample of all political nominations - not just those made to the 15 cabinets in line for presidential succession.
+        <br><br> Concerns over <a class="a-2" href="https://www.usnews.com/news/politics/articles/trump-turnover-2-0-tracking-whos-out-of-trumps-second-term">vacancies and high turnover</a> have plagued the media. Controversial appointees, like Matt Gaetz and Chad Chronister have been withdrawn before making it to a Senate vote. Even confirmed positions have faced upsets, with Trump firing several high profile appointees - including Chairman of the Joint Chiefs of Staff Charles Brown, Federal Reserve Governor Lisa Cook, and Center for Disease Control Head Susan Monarez. This visualization highlights that these concerns are noteworthy, but that the majority of nominations have quietly advanced and are currently filled.
+        </p>
+        <iframe src="sankey.html" width="100%" height="500" frameborder="0" style="border:0"></iframe>
+        <h5 class="padding-16">Appointment pace has skyrocketed between Trump's 201-300 days in office</h5>
+        <p class="text-grey">[Stuff about senate confirmations]</p>
+        <!-- <iframe src="#" width="100%" height="500" frameborder="0" style="border:0"></iframe> -->
+    </div>
+</div>
+
+</div>
+
+
+<!-- Footer -->
+<footer class="container padding-64 center opacity">  
+ <p>Created by Marisa MacDonald, Emilia Murphy, and Ilias Papageorgiou</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+/* ===== Base / Reset ===== */
+html {box-sizing: border-box;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;overflow-x: hidden;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {margin: 0; font-family: Gelasio, serif; font-size: 15px; line-height: 1.5;
+}
+
+/* ===== Headings ===== */
+h1 { font-size: 64px }
+h2 { font-size: 30px }
+h3 { font-size: 30px; font-weight: bold; text-align: center;}
+h4 { font-size: 24px}
+h5 { font-size: 20px}
+h6 { font-size: 16px }
+
+h1,h2,h3,h4,h5,h6 {font-family: "Gelasio", serif; font-weight: 400; margin: 10px 0;
+}
+
+/* ===== Links & Buttons ===== */
+.a-1 {background-color: transparent; color: inherit; text-decoration: none;
+}
+.a-2 {background-color: transparent; color: #0072B2; text-decoration: underline;
+}
+
+.button {border: none; display: inline-block; padding: 8px 16px; vertical-align: middle; background-color: inherit; text-align: center; cursor: pointer; white-space: nowrap;
+}
+
+.button:hover {color: #000 !important; background-color: #ccc !important;
+}
+
+/* ===== Navbar ===== */
+.top {position: fixed; width: 100%; z-index: 1; top: 0;
+}
+
+.bar {width: 100%; overflow: hidden;
+}
+
+.bar .bar-item {float: left; padding: 8px 16px; border: none; display: block;
+}
+
+.left-align {text-align: left !important;
+}
+
+.large {font-size: 18px !important;
+}
+
+/* ===== Cards ===== */
+.card { box-shadow: 0 2px 5px rgba(0,0,0,0.25),
+                    0 2px 10px rgba(0,0,0,0.12);
+}
+
+/* ===== Layout ===== */
+.container {padding: 0.01em 16px;
+}
+
+.content {margin-left: auto; margin-right: auto; max-width: 100%;
+}
+
+.row-padding {padding: 0 8px;
+}
+.row-padding > div {padding: 0 8px;
+}
+
+.graph {float: left; width: 100%;
+}
+
+/* clearfix */
+.container::after,
+.row-padding::after,
+.bar::after {content: ""; display: table; clear: both;
+}
+
+/* ===== Alignment & Utilities ===== */
+.center {text-align: center !important;
+}
+
+.margin {margin: 12px !important;
+}
+
+.padding-16 {padding-top: 16px !important; padding-bottom: 16px !important;
+}
+
+.padding-64 {padding-top: 64px !important; padding-bottom: 64px !important;
+}
+
+.opacity {opacity: 0.7;
+}
+
+/* ===== Text Color and size ===== */
+
+.text-grey {color: #636363 !important; font-size: 18px;
+}
+
+/* ===== Visibility ===== */
+.hide-small {display: none !important;
+}
+
+@media (min-width: 601px) {
+  .hide-medium {display: none !important;
+  }
+  .hide-small {display: block !important;
+  }
+}
+
+@media (min-width: 993px) {
+  .hide-large {display: none !important;
+  }
+}
+
+/* ===== Colors ===== */
+.blue {color: #fff !important; background-color: #86abf4 !important;
+}
+
+.white {color: #000 !important; background-color: #fff !important;
+}
+
+.hover-white:hover {color: #000 !important; background-color: #fff !important;
+}
